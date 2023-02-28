@@ -1,0 +1,226 @@
+:root {
+  --Blue: hsl(223, 87%, 63%);
+
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html {
+  font-size: 62.5%;
+}
+/* html,
+body {
+  height: 100%;
+} */
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
+  color: var(--Very-Dark-Blue);
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.main-section {
+  padding: 8rem 0;
+  background-color: #ffffff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 90rem;
+  padding: 0 3rem;
+}
+
+.company-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+.heading-primary {
+  font-size: 4.8rem;
+  font-weight: 300;
+  color: var(--Gray);
+
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.soon {
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+
+.info {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--Very-Dark-Blue);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.email-input-field {
+  padding: 1.8rem 3.6rem;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+  color: #b8c7ed;
+  border: 1px solid var(--Gray);
+  outline: none;
+  width: 42.1rem;
+  transition: all 0.5s;
+}
+
+.email-input-field:hover {
+  border: 1px solid var(--Pale-Blue);
+}
+
+.email-input-field:focus {
+  border: 1px solid var(--Blue);
+  color: var(--Blue);
+  font-weight: 600;
+}
+
+.email-input-field:focus::placeholder {
+  font-size: 1.6rem;
+  color: #b8c7ed;
+  font-weight: 300;
+}
+
+.btn {
+  background-color: var(--Blue);
+  color: white;
+  padding: 2rem;
+  border-radius: 5rem;
+  border: none;
+  width: 20rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  box-shadow: 0 0.5rem 10px var(--Pale-Blue);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: hsl(223, 87%, 68%);
+}
+
+.error-msg {
+  font-size: 1.2rem;
+  font-style: italic;
+
+  position: absolute;
+  left: 18%;
+  top: 120%;
+  color: var(--Light-Red);
+  font-weight: 300;
+  transition: all 0.3s;
+}
+
+.main-image {
+  margin: 8rem auto;
+  width: 64rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.icons a {
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 1px solid var(--Gray);
+  border-radius: 50%;
+  color: var(--Blue);
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: all 0.5s;
+}
+
+.icons a:hover {
+  background-color: var(--Blue);
+  border: none;
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--Very-Dark-Blue);
+}

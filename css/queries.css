@@ -1,0 +1,48 @@
+@media (max-width: 700px) {
+  .container {
+    width: 35rem;
+    padding: 0 3rem;
+  }
+
+  .company-logo {
+    margin-bottom: 3rem;
+  }
+
+  .company-logo img {
+    width: 5.6rem;
+  }
+
+  .heading-primary {
+    font-size: 2.2rem;
+  }
+
+  .info {
+    font-size: 1.2rem;
+  }
+
+  .form {
+    flex-direction: column;
+    margin-bottom: none;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  .email-input-field {
+    padding: 1.4rem 2.8rem;
+    font-size: 1.2rem;
+    width: 28rem;
+  }
+
+  .error-msg {
+    font-size: 1rem;
+
+    left: 22%;
+    top: 48%;
+  }
+
+  .btn {
+    padding: 1.4rem;
+    width: 28rem;
+    font-size: 1.2rem;
+  }
+} ;
